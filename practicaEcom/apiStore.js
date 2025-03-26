@@ -71,7 +71,7 @@ const showProducts = async () => {
     cardsArea.innerHTML = '';
     const productos = await cargarProductos();
 
-    productos.forEach((producto, index) => {
+    productos.forEach((producto) => {
         cardsArea.innerHTML += `
     <div class="card col" id="${producto.name}">
         <div class="d-flex align-items-center mx-auto" style="height: 200px; width: 200px;">
